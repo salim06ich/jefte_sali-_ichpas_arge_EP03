@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus-hub
+    </title>
+    <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="js/pasarela.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/LOGO NEGRO.png" alt="Logo" >
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i> Datos</a></li>
+                <li><a href="#"><i class="fa-solid fa-location-dot"></i> Mapas</a></li>
+                <li><a href="#"><i class="fa-solid fa-image"></i> Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+    <div class="slider-container">
+        <img src="img/img-horizontal-1.jpg" class="slider-image active" alt="Imagen 1">
+        <img src="img/img-horizantal-2.jpg" class="slider-image" alt="Imagen 2">
+    </div>
+    <script>
+        // Selecciona todas las imágenes del slider y configura el índice inicial
+        const images = document.querySelectorAll('.slider-image');
+        let currentIndex = 0;
+        // Función para cambiar a la siguiente imagen
+        function nextImage() {
+            // Quita la clase 'active' de la imagen actual
+            images[currentIndex].classList.remove('active');
+            // Cambia al siguiente índice, con ciclo si llega al final
+            currentIndex = (currentIndex + 1) % images.length;
+            // Añade la clase 'active' a la siguiente imagen
+            images[currentIndex].classList.add('active');
+        }
+        // Cambia de imagen cada 2 segundos
+        setInterval(nextImage, 2000);
+    </script>
+       <section class="titulo1">
+        <h2>ENVÍA TUS DATOS</h2>
+        <p>Registrate y obten un DESCUENTO del 50% en tu matricula.</p>
+        </section>
+
+    <div class="formulario">
+        <div class="box2 a2">
+            <img src="img/pexels-bertellifotografia-12802263.jpg" alt="">
+        </div>
+        <div class="box2 b2">
+            <form action="">
+                <h2>Pre-Registro de Estudio</h2><br>
+                <label for="Apellidos y nombres">Ingrese sus apellidos y nombres</label><br>
+                <input type="text" name="texto"><br>
+                <label for="Correo electronico">Ingrese su correo electronico</label><br>
+                <input type="text" name="texto"><br><br>
+
+                <p>Opción de tipo de estudio</p><br>
+                <input type="radio" id="presencial" name="tipo-estudio" value="presecial">
+                <label for="presencial">Presencial</label><br>
+                <input type="radio" id="semipresencial" name="tipo-estudio" value="semipresencial">
+                <label for="semipresencial">Semipresencial</label><br>
+                <input type="radio" id="remoto" name="tipo-estudio" value="remoto">
+                <label for="remoto">Remoto</label><br><br>
+
+                <p>Sedes que te gutaria estudiar</p><br>
+                <input type="checkbox" id="Sede1" name="sede" value="">
+                <label for="vehicle1"> Miraflores</label><br>
+                <input type="checkbox" id="Sede2" name="sede" value="">
+                <label for="vehicle2"> San isidro</label><br>
+                <input type="checkbox" id="Sede3" name="sede" value="">
+                <label for="vehicle3"> San miguel</label><br>
+                <input type="checkbox" id="Sede4" name="sede" value="">
+                <label for="vehicle3"> San borja</label><br><br>
+
+                <input type="submit">
+
+                
+                
+            </form>
+        </div>
+
+    </div>
+
+
+    
+    <section class="Ubicacion">
+        <h2>Nuestra ubicación</h2>
+        <p>Encuentranos en lugares cercanos a Lima metropolitana </p>
+    </section>
+    <div class="mapa">
+        <iframe class="mapa2" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31053.721320374334!2d-77.06167310285984!3d-12.06985093634637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1731699440335!5m2!1ses-419!2spe" width="600" height="450" 
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+
+
+
+    <div class="video-container">
+        
+        <video autoplay muted loop>
+            <source src="img/Ultimo.mp4" type="video/mp4">
+        </video>
+      
+        <div class="video-title">Bienvenidos a la escuela de fotografia</div>
+    </div>
+
+    <div class="gallery-container">
+        <div class="box a">
+            <img src="img/img-horizontal-1.jpg" alt="Imagen 1"><br>
+            <p>Prueba las camaras</p>
+        </div>
+        <div class="box b">
+            <img src="img/img-horizantal-2.jpg" alt="Imagen 2"><br>
+            <p>Desde las mas basicas</p>
+        </div>
+        <div class="box c">
+            <img src="img/img-horizontal-3.jpg" alt="Imagen 3"><br>
+            <p>Hasta las mas complejas</p>
+        </div>
+        <div class="box d">
+            <img src="img/pexels-amar-19481474.jpg" alt="Imagen 4"><br>
+            <p>Todas a disposición</p>
+        </div>
+        <div class="box e">
+            <img src="img/pexels-baran-robin-76507255-28792450.jpg" alt="Imagen 5"><br>
+            <p>Vive una experiencia unica</p>
+        </div>
+        <div class="box f">
+            <img src="img/pexels-imadclicks-11151161.jpg" alt="Imagen 6"><br>
+            <p>De todas las camaras</p>
+        </div>
+    </div>
+<footer>
+    <div class="fotter">
+        <div class="box3 a3">
+            <div class="iconos">
+             <a href=""><i class="fa-brands fa-facebook"></i></a>
+             <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+             <a href=""><i class="fa-brands fa-instagram"></i></a>
+             <a href=""><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="box3 b3">
+            <p>Jefte Salim Ichpas Arge</p>
+        </div>
+        <div class="box3 c3">
+            <div class="iconos">
+            <a href=""><i class="fa-brands fa-whatsapp"></i> +51 943184184</a>
+        </div>
+        </div>
+        <div class="box3 d3">
+            <div class="info">
+            <p>ISIL-San Isidro-Lima</p>
+         </div>
+        </div>
+        <div class="box3 e3">
+            <div class="info">
+            <p>Diseño UX-1er año</p>
+         </div>
+        </div>
+        <div class="box3 f3">
+            <div class="info">
+            <p>Docente:ROBERTO INGA ALVARADO</p>
+         </div>
+        </div>
+    </div>
+</footer>   
+</body>
+</html>
